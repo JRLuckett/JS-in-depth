@@ -43,6 +43,7 @@ answer: a method that is not accessible globally.
 answer: the method takes up a lot of memory because each time an instance of the method is called it is rewritten for the new instance
 
 6. What is a “closure” in JavaScript? Provide an example.
+
 answer: a closure is function within a parent function that has access to global, parent, and personal variables.
   ```javascript
     let globalVar = 1;
@@ -71,7 +72,9 @@ answer:
 }
 ```
 8. How would you empty an array in JavaScript? Provide at least 2 methods of doing so.
+
 answer: array = []; & array = null;
+
 9. What will be the output of the following code?
 ```javascript
 var output = (function(x){
@@ -82,6 +85,7 @@ var output = (function(x){
   console.log(output);
 ```
 answer: `0`
+
 What about this code?
 ```javascript
 var x = 1;
@@ -93,6 +97,7 @@ var output = (function(){
   console.log(output);
 ```
 answer: `1`
+
 And what about this one?
 ```javascript
 var x = { foo : 1};
@@ -104,6 +109,7 @@ var output = (function(){
   console.log(output);
 ```
 answer: `undefined`
+
 And finally, what about this one?
 ```javascript
 var Employee = {
@@ -114,6 +120,7 @@ delete emp1.company
 console.log(emp1.company);
 ```
 answer: `xyz`
+
 10. What would this code return?
 ```javascript
 var trees = ["xyz","xxxx","test","ryan","apple"];
@@ -122,6 +129,7 @@ delete trees[3];
   console.log(trees.length);
 ```
 answer:`5`
+
 11. What will be the output of the code below?
 ```javascript
 var bar = true;
@@ -131,12 +139,14 @@ console.log(bar + true);
 console.log(bar + false);   
 ```
 answer: `1, truexyz, 2, 1`
+
 12. What will be the output of the code below?
 ```javascript
 var z = 1, y = z = typeof y;
 console.log(y);  
 ```
 12. `undefined`
+
 13. What would be the output of the code below?
 ```javascript
  var salary = "1000$";
@@ -151,6 +161,7 @@ console.log(y);
 
 ```
 answer: `Original salary was undefined, My New Salary 5000$`
+
 14. What is the instanceof operator in JavaScript? What would be the output of the code below?
 ```javascript
 function foo(){
@@ -159,19 +170,28 @@ function foo(){
 new foo() instanceof foo;
 ```
 answer: an instance operator checks if an object has inheritance from the stated prototype, `false`.
+
 15. What constitutes a "Primitive" value in Javascript?
+
 answer: the value is immutable, cannot be changed.
+
 16. What is the difference between a reference type variable and a value type variable?
+
 answer: reference type variable (pointer) looks to other variables to establish value. A value type variable (holder) holds an established value.
+
 17. How would you describe the difference between class-based inheritance and prototypical inheritance?  
 
 ## ES6 Questions
 
 1. What is the difference between JavaScript and ECMAScript?
 2. What do `const` and `let` do? And when would we use them?
+
 answer: `const` defines a variable that will stay constant and cannot be reassigned an new value. `let` defines a variable.
+
 3. How would you describe the difference between `function` and `function*`?
+
 answer: `function*` declares a generator function which is a pausable function
+
 4. When would you NOT use an arrow function in the place of a regular function expression?
 5. Refactor the following code to use an ES6 Template Literal.
 ```javascript
@@ -204,9 +224,13 @@ answer:
 }
 ```
 7. What is a "Promise" in ES6? And how many different states do they have?
+
 answer: A promise (callback) initiates an action once a value is realized. The states are Rending, Fulfilled, and Rejected.
+
 8. What is a practical use case for Promises?
+
 answer: querying information and once that information is received acting on that value (().then).
+
 9. What is wrong with the following code? And how could it be better?
 ```javascript
 new Promise((resolve, reject) => {  
@@ -214,14 +238,19 @@ new Promise((resolve, reject) => {
 }).then(console.log)
 ```
 10. Describe the .fetch() method. What is one disadvantage to using the .fetch() method over existing methods?
+
 answer: Fetch allows access to the the request and responses pipeline of the HTTP protocol.  The .fetch() method will not reject on HTTP error status, it will only reject if the request was not completed.  fetch() doesn't maintain user sessions causing possible issues with authentication.
 
 ## Node.js Questions
 
 1. What is Node.js?
+
 answer: Node.js is a JavaScript runtime built on Chrome's V8 JavaScript engine.
+
 2. What is an "Error-First" Callback?
-answer: If there is an error throw and error otherwise return the successful information query.  
+
+answer: If there is an error throw and error otherwise return the successful information query.
+
 3. What is the Node.js Event Loop?
 4. Why might someone choose to use the Node.js Async single-threaded model over a more traditional multi-threaded model?
 5. What is meant by the term "non-blocking I/O"?
@@ -236,19 +265,31 @@ answer: If there is an error throw and error otherwise return the successful inf
 5. In which React lifecycle event would you make AJAX requests? And why?
 6. Why would you use `React.Children.map(props.children, () => )` instead of `props.children.map(() => )`?
 7. What is JSX?
+
 answer: a preprocessor step that adds XML syntax to JavaScript.
 
 ## Internet/Network Questions
 
 1. What does TCP/IP stand for?
+
 answer: Transmission Control Protocol/Internet Protocol
+
 2. Behind the scenes, how does HTTPS differ from HTTP?
-answer: All communications between the users browser and the website are encrypted.  
+
+answer: All communications between the users browser and the website are encrypted.
+
 3. Define the general response status code categories.
+
 answer: 200 -> ok, 201 -> created, 204 -> no content, 304 -> not modified, 400 -> bad request, 401 -> not authorized, 403 -> forbidden, 404 -> not found, 409 -> conflict, 500 -> internal server error
+
 4. What does DDOS stand for?
+
 answer: distributed denial-of-service
+
 5. What is CORS? How does it work?
+
 answer: Cross-Origin Resource Sharing allows data to be transferred securely across different domains.  HTTP headers communicate what actions is to executed on what data.  
+
 6. What does REST stand for when we refer it in the context of a "RESTful API"?
+
 answer: REpresentational State Transfer
