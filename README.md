@@ -145,7 +145,7 @@ answer: `1, truexyz, 2, 1`
 var z = 1, y = z = typeof y;
 console.log(y);  
 ```
-12. `undefined`
+answer: `undefined`
 
 13. What would be the output of the code below?
 ```javascript
