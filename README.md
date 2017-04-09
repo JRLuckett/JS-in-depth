@@ -17,9 +17,13 @@ This homework is designed to prepare you for questions you may face during an in
 ## Core JavaScript Questions
 
 1. What is the difference between `undefined` and `not defined` in JavaScript?
+
 answer:`undefined` is the output caused by calling a variable that is declared but not defined.`not defined` is the output caused by calling a variable that is neither declared or defined.
+
 2. What is "Hoisting" in JavaScript?
+
 answer: variables are moved to the top of the scope in which they are declared in order to be accessible by all scope attributes   
+
 3. What would be the output of the following code?
 ```javascript
     var y = 1;
@@ -29,10 +33,15 @@ answer: variables are moved to the top of the scope in which they are declared i
      console.log(y);
 ```
 answer: y is declared and defined as 1 and f(){} is declared but not defined so the output would be `1undefined`
+
 4. What is a "private method"?
+
 answer: a method that is not accessible globally.
+
 5. What is the drawback of creating true private methods in JavaScript?
+
 answer: the method takes up a lot of memory because each time an instance of the method is called it is rewritten for the new instance
+
 6. What is a “closure” in JavaScript? Provide an example.
 answer: a closure is function within a parent function that has access to global, parent, and personal variables.
   ```javascript
